@@ -1,0 +1,30 @@
+Actions class for Moveto, Drag and drop concept
+Select class is for Dropdown concept
+
+
+Xpaths Concept
+Practice website for Xpaths
+https://phptravels.com/demo
+Preceding-sibling
+Following-sibling
+parent
+child
+
+
+However, there are different ways of writing dynamic XPaths such as:
+
+Using Single Slash
+Using Double Slash
+Using Single Attribute
+Using Multiple Attribute
+//*[@attribute_name1='attribute_value1'][@attribute_name2='attribute_value2]  
+Using AND
+//*[@attribute_name1='attribute_value1' and @attribute_name2='attribute_value2] 
+Using OR
+//*[@attribute_name1='attribute_value1' or @attribute_name2='attribute_value2] 
+Using contains()
+//*[contains(@attribute_name,'attribute_value')]  
+Using starts_with()
+Using text()
+Using last() - selects last input webelement on the page
+//input[@type='text'])[last()]
