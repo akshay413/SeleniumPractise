@@ -28,3 +28,34 @@ Using starts_with()
 Using text()
 Using last() - selects last input webelement on the page
 //input[@type='text'])[last()]
+
+
+Page Object model (POM) / Page Chaining Model
+It is Design pattern approach
+It is integrate with data driven framework + TestNG
+For each page create a seperate Java class
+Define WebObjects/WebElements
+Actions/Methods  -> Fetures
+First Layer  -> Page Layer -> check how many pages, home many features in each page
+Test Layer -> for each class we can create seperate test layers -> We will write test cases in this layer
+Test layer will be written by using TestNG
+We need to have Base class -> it is parent class of all the classes
+Properties file -> Environment varaibles, URL, Xpaths, User name, Password
+Data will be defined in excel file -> apace POI API is used to read data
+TestUtilitis -> Screenshot, send mail
+Test Report (Extent Report)
+
+Java
+Selenium webdriver
+TestNG
+Maven
+Apache POI API
+Extent Report/TestNG Report
+Log4j API
+Jenkins - CI
+GIT Repository
+GRID - Parallel Testing
+Browsers - FF/Chrome/IE/Safari
+MAC/Windows/Linux
+VMs/SourceLabs/BrowserStack/Local
+
