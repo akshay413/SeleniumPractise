@@ -7,7 +7,7 @@ public class AbsoluteXpathConcept {
 
 	public static void main(String[] args) {
 
-		System.setProperty("webdriver.chrome.driver", "E:\\testing\\chromedriver.exe");  
+		System.setProperty("webdriver.chrome.driver", "G:\\Selenium\\chromedriver.exe");  
 		   WebDriver driver=new ChromeDriver();    // launch chrome driver
 		    
 		

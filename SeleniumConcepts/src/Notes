@@ -33,12 +33,13 @@ Using last() - selects last input webelement on the page
 Page Object model (POM) / Page Chaining Model
 It is Design pattern approach
 It is integrate with data driven framework + TestNG
-For each page create a seperate Java class
-Define WebObjects/WebElements
-Actions/Methods  -> Fetures
-First Layer  -> Page Layer -> check how many pages, home many features in each page
+1. For each page create a seperate Java class
+2. Define WebObjects/WebElementsin the clases which are created for each page
+3. Actions/Methods  -> Fetures
+First Layer  -> Page Layer -> check how many pages, home many features in each page -> Page libraries
 Test Layer -> for each class we can create seperate test layers -> We will write test cases in this layer
 Test layer will be written by using TestNG
+Test base class -> parent class of all classes
 We need to have Base class -> it is parent class of all the classes
 Properties file -> Environment varaibles, URL, Xpaths, User name, Password
 Data will be defined in excel file -> apace POI API is used to read data
@@ -58,4 +59,92 @@ GRID - Parallel Testing
 Browsers - FF/Chrome/IE/Safari
 MAC/Windows/Linux
 VMs/SourceLabs/BrowserStack/Local
+
+Test NG
+TestNG -- unit test framework
+TDD -- Test Driven Development
+purpose--design test cases in a systematic way
+--html reports
+--diff annotations
+--priorities/sequence
+--dependency
+--grouping
+--data provider
+testng--open source, free
+JAR files
+--Java unit testing framework
+install Testng in Eclipse:
+http://beust.com/eclipse/
+Sequence in which testng executes
+@BeforeSuite 
+@BeforeTest 
+@BeforeClass 
+@BeforeMethod 
+@Test 
+@AfterMethod 	
+@AfterClass 
+@AfterTest 
+
+Groups keyword is used to define group of test case
+Dependsonmethod
+InvocationCount
+Timeout, invocationtimeout
+ExceptedException
+Create a XML file to run all the classes at once
+Retry logic - I retry listener -> can be done at test and run time
+
+Dependencies
+
+<dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>3.141.59</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.3.0</version>
+    <scope>Compile</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>4.1.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>4.1.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml-schemas</artifactId>
+    <version>4.1.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-scratchpad -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-scratchpad</artifactId>
+    <version>4.1.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.poi/ooxml-schemas -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>ooxml-schemas</artifactId>
+    <version>1.4</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.poi/openxml4j -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>openxml4j</artifactId>
+    <version>1.0-beta</version>
+</dependency>
+
+
+
+
 
